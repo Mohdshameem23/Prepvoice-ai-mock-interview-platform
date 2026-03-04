@@ -4,6 +4,10 @@ import { Routes, Route } from "react-router-dom";
 import CreateInterview from "./component/InterviewForm";
 import Sidebar from "./component/Sidebar";
 import Questions from "./pages/Questions";
+import Interview from "./pages/Interview";
+import InterviewJoin from "./pages/InterviewJoin";
+
+
 
 const App = () => {
   return (
@@ -19,11 +23,14 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/create-interview" element={<CreateInterview />} />
           <Route path="/questions" element={<Questions />} />
+          <Route path="/Interview" element={<Interview/>}/>
+          <Route path="/InterviewJoin" element={<InterviewJoin/>}/>
 
         </Routes>
       </div>
 
     </div>
+
   );
 };
 
